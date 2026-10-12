@@ -8,7 +8,6 @@ def mean_median_mode(x: list) -> dict:
     results = {}
     counts = Counter(x)   
     x = np.asarray(x)
-    n = x.shape[0]
     # Mean
     results["mean"] = float(np.mean(x))
     # Median
