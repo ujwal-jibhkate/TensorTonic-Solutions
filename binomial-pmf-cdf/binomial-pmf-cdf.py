@@ -4,9 +4,6 @@ def binomial_pmf_cdf(n: int, p: float, k: int) -> dict:
     """
     Returns a dictionary with pmf and cdf.
     """
-    n_fact = math.factorial(n)
-    k_fact = math.factorial(k)
-  
     binom_coef = math.comb(n, k)
     pmf = binom_coef * p**k * (1-p)**(n-k)
 
