@@ -6,9 +6,9 @@ def polynomial_features(values: list, degree: int) -> list:
 
     
     for val in values:
-        temp =[1]
-        for i in range(degree):
-            temp.append(val**(i+1))
+        temp =[]
+        for i in range(degree+1):
+            temp.append(val**(i))
         result.append(temp)
 
     return result
