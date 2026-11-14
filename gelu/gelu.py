@@ -7,4 +7,4 @@ def gelu(x: list) -> np.ndarray:
     """
     x = np.asarray(x, dtype=float)
     erf = np.vectorize(math.erf)
-    return ((x/2) * (1+erf(x/np.sqrt(2))))
+    return ((x/2.0) * (1.0+erf(x/np.sqrt(2.0))))
